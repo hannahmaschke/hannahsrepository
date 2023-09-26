@@ -78,8 +78,8 @@
         clear: left;
         padding: 40px 0;
         background: #c13832;
-        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
-                    inset 0 -3px 2px rgba(0,0,0,0.5);
+        box-shadow: inset 0 3px 2px Red(0,0,0,0.5),
+                    inset 0 -3px 2px Red(0,0,0,0.5);
       }
 
       .further-info a {
@@ -160,8 +160,8 @@
 
       <div class="red-panda">
         <picture>
-        <img src="red-pandacropped.jpg"
-         sizes="(max-width=600px)"
+        <source media="(max-width=600px)" srcset="red-pandacropped">
+        <img src="red-panda.jpg"
          alt="photo of a red panda">
         </picture>
       </div>
