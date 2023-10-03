@@ -38,5 +38,6 @@ section {
     background-color: #e7dfdf;
     border-color: #9a257b;
     border-width: thick;
-    padding: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
