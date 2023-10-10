@@ -7,12 +7,13 @@ html {
   .box {
     box-sizing: block;
     width: 200px;
-    line-height: 9;
+    line-height: 3;
     margin: auto; /* this will center the box horizontally*/
     padding:10px; /* centers the text inside the box */
     font-size:2rem; /* Guessed the size until it matched the completed image */
     background-color: red;
     color: white;
     text-shadow: 1px 1px 1px black;
+    border-radius: 20px;
 
   }
