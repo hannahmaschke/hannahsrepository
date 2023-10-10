@@ -4,10 +4,12 @@ html {
   
   /* Your CSS below here */
 
-  .box {
+  div {
 
     width: 200px;
     height: 200px;
     margin: auto; /* this will center the box horizontally*/
-    padding:10px /* centers the text inside the box */
+    padding:10px; /* centers the text inside the box */
+    font-size:2rem;
+
   }
