@@ -3,3 +3,11 @@ html {
   }
   
   /* Your CSS below here */
+
+  .box {
+
+    width: 200px;
+    height: 200px;
+    margin: auto; /* this will center the box horizontally*/
+    padding:10px /* centers the text inside the box */
+  }
