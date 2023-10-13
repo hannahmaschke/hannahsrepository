@@ -1,0 +1,25 @@
+html {
+    font-family: sans-serif;
+  }
+  
+  /* Your CSS below here */
+
+  .box {
+    /*box-sizing: block;*/
+    width: 200px;
+    line-height: 8;
+    margin: auto; /* this will center the box horizontally*/
+    padding:10px; /* centers the text inside the box */
+    text-align: center;
+    font-size:1.2rem; /* Guessed the size until it matched the completed image */
+    background-color: red;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 30px;
+    border: 2px solid rgb(160, 25, 25);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: 2px 5px 5px black;
+    box-shadow: inset -5px -5px 17px -9px #000000, 
+    inset 20px 20px 25px -33px #FFFFFF;
+    
+  }
