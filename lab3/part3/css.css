@@ -79,10 +79,13 @@ html {
 h1, h2 {
   font-family: newyorkregular, sans-serif;
   font-size: medium;
+  letter-spacing: 2px;
 }
 
 body {
   line-height: normal;
+  letter-spacing: 1px;
+  word-spacing: 1.5px;
 }
 
 h1 {
