@@ -73,3 +73,8 @@ html {
   font-family: 'gilganregular', serif;
   font-size: 10px;
 }
+
+h1, h2 {
+  font-family: newyorkregular, sans-serif;
+  font-size: medium;
+}
