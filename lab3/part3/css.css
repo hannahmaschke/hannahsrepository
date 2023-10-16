@@ -68,3 +68,8 @@
   font-style: normal;
 
 }
+
+html {
+  font-family: 'gilganregular', serif;
+  font-size: 10px;
+}
