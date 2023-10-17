@@ -87,6 +87,7 @@ body {
   line-height: 1.5;
   letter-spacing: 1px;
   word-spacing: 1.5px;
+  margin: 2;
 }
 
 h1 {
@@ -147,3 +148,22 @@ ol{
   }
   
   
+
+/* Navigation bar */
+
+nav ul {
+  border: 1px solid #a66;
+}
+
+nav li {
+  text-align: center;
+  border-bottom: 1px solid #a66;
+  list-style-type: none;
+}
+
+nav li a {
+  text-decoration: none;
+  font-size: small;
+  line-height:4;
+  display: inline-block
+}
