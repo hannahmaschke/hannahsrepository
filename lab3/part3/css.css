@@ -100,19 +100,30 @@ h1 + p, h2 + p{
 
 a {
   color:#a66
+
   
+
 }
 
 a:visited{
+ 
   color:#a66
+  
 }
 
 a:focus{
   color:#a66
+ text-decoration underline;
+ border-bottom: 1px solid;
 
 }
 
 a:hover {
-  color:#a66
+  color:#a66bbb
+  text-decoration underline;
+  border-bottom: 1px solid;
+}
+
+a:active{
 
 }
