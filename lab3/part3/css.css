@@ -125,5 +125,15 @@ a:hover {
 }
 
 a:active{
-
+color: red;
 }
+
+a[href*="http"] {
+background: url("icons8-external-link-26.png") no-repeat 100% 0;
+background-size: 16px 16px;
+padding-right: 19px;
+}
+
+
+ol{
+  list-style-type:upper-roman;}
