@@ -49,3 +49,36 @@ body {
   .feature {
       width: 200px;
   }
+
+  
+
+  /* My changes to the CSS */
+  
+html, body {
+  margin: 0;
+  font-family: serif;
+}
+
+  .container {
+    display: flex;
+    gap: 0.9%;
+    
+  }
+
+  a {
+    flex: 1;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    line-height: 2;
+    color: black;
+    
+  }
+
+  li {
+    display: inline;
+    padding: 60px;
+    position: center;
+    
+  }
+
