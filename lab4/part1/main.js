@@ -38,10 +38,11 @@ function result() {
     newStory = newStory.replace("Bob", name);
 
   }
-
+// formula for converting lbs to stone: lbs * 0.0714286
+// formula for converting fahrenheit to celcius : C = 5/9(F-32)
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
+    const weight = `${Math.round(300*0.0714286) + "stone"}`;
+    const temperature =  `${Math.round(5/9(94-32)) + "celcius"}`;
 
   }
 
