@@ -24,9 +24,9 @@ function result()
     const zItem = randomValueFromArray(insertZ);
     let newStory = storyText;
 
-    newStory = newStory.replaceAll(':insertX:', xItem);
-    newStory = newStory.replaceAll(':insertY:', yItem);
-    newStory = newStory.replaceAll(':insertZ:', zItem);
+    newStory = newStory.replaceAll(':insertx:', xItem);
+    newStory = newStory.replaceAll(':inserty:', yItem);
+    newStory = newStory.replaceAll(':insertz:', zItem);
 
 //3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
 
