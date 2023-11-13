@@ -14,30 +14,31 @@ let storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. Whe
 const insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
 const insertY = ["the soup kitchen", "Disneyland", "the White House"];
 const insertZ = ["spontaneously combusted", "melted into a puddle on the sidewalk", "turned into a slug and crawled away"];
-newStory = storyText;
+
+randomize.addEventListener('click', result);
 
 function result() 
 {
     const xItem = randomValueFromArray(insertX);
     const yItem = randomValueFromArray(insertY);
     const zItem = randomValueFromArray(insertZ);
-}
+    let newStory = storyText;
 
-newStory = newStory.replace(':insertX:', xItem);
-newStory = newStory.replace(':insertY:', yItem);
-newStory = newStory.replace(':insertZ:', zItem);
+    newStory = newStory.replace(':insertX:', xItem);
+    newStory = newStory.replace(':insertY:', yItem);
+    newStory = newStory.replace(':insertZ:', zItem);
 
 //3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
 
-randomize.addEventListener('click', result);
 
-function result() {
+
+
 
   if(customName.value !== '') {
     const name = customName.value;
     newStory = newStory.replace("Bob", name);
 
-  }
+}
 // formula for converting lbs to stone: pounds * 0.0714286
 // formula for converting fahrenheit to celcius : C = 5/9(F-32)
   if(document.getElementById("uk").checked) {
