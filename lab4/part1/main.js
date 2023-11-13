@@ -24,9 +24,9 @@ function result()
     const zItem = randomValueFromArray(insertZ);
     let newStory = storyText;
 
-    newStory = newStory.replace(':insertX:', xItem);
-    newStory = newStory.replace(':insertY:', yItem);
-    newStory = newStory.replace(':insertZ:', zItem);
+    newStory = newStory.replaceAll(':insertX:', xItem);
+    newStory = newStory.replaceAll(':insertY:', yItem);
+    newStory = newStory.replaceAll(':insertZ:', zItem);
 
 //3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
 
@@ -36,7 +36,7 @@ function result()
 
   if(customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace("Bob", name);
+    newStory = newStory.replaceAll("Bob", name);
 
 }
 // formula for converting lbs to stone: pounds * 0.0714286
@@ -44,8 +44,8 @@ function result()
   if(document.getElementById("uk").checked) {
     const weight = `${Math.round(300*0.0714286) + "stone"}`;
     const temperature =  `${Math.round(5/9(94-32)) + "centigrade"}`;
-    newStory = newStory.replace("94 fahrenheit", temperature);
-    newStory = newStory.replace("300 pounds", weight);
+    newStory = newStory.replaceAll("94 fahrenheit", temperature);
+    newStory = newStory.replaceAll("300 pounds", weight);
 
   }
 
