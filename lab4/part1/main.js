@@ -23,6 +23,10 @@ function result()
     const zItem = randomValueFromArray(insertZ);
 }
 
+newStory = newStory.replace(':insertX:', xItem);
+newStory = newStory.replace(':insertY:', yItem);
+newStory = newStory.replace(':insertZ:', zItem);
+
 //3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
 
 randomize.addEventListener('click', result);
