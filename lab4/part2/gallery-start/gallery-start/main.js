@@ -13,14 +13,14 @@ const alts =
 'pic2.jpg' : 'An interesting wave-like rock formation. ',
 'pic3.jpg' : 'Purple flowers. ',
 'pic4.jpg' : 'Egyptian hieroglyphs. ',
-'pic5.jpg' : 'A brown moth on a green leaf. '};
+'pic5.jpg' : 'A brown moth on a green leaf. '}
 
 /* Looping through images */
 for (const image of images) {
     const newImage = document.createElement('img');
     newImage.setAttribute('src', `images/${image}`);
     newImage.setAttribute('alt', alts[image]);
-    thumbBar.appendChild(newImage);;
+    thumbBar.appendChild(newImage);
 /* Add a click event listener to each <img> inside the thumb bar (this is supposed to be part of the loop) */
     newImage.addEventlistener('click', e => 
     {
