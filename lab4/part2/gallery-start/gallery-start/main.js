@@ -32,4 +32,18 @@ for (const image of images) {
 btn.addEventListener('click', e =>
 {
     const btnclass = btnclass.getAttribute();
+    if (btnclass === "dark")
+    {
+        btn.setAttribute("class", "light");
+        btn.textContent = "lighten";
+        overlay.style.backgroundColor = "rgba(0,0,0,0.5)";
+
+    }else (btnclass === "light")
+    { 
+        btn.setAttribute("class", "darken")
+        btn.textContent = "darken";
+        overlay.style.backgroundColor = "rgba(0,0,0,0)";
+
+    }
+    
 })
