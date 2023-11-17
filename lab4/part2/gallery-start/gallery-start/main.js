@@ -17,16 +17,16 @@ const alts =
 
 /* Looping through images */
 for (const image of images) {
-    const image = document.createElement('img');
+    const newImage = document.createElement('img');
     newImage.setAttribute('src', `images/${image}`);
     newImage.setAttribute('alt', alts[image]);
     thumbBar.appendChild(newImage);;
 /* Add a click event listener to each <img> inside the thumb bar (this is supposed to be part of the loop) */
-  newImage.addEventlistener('click', e => 
-  {
-    displayedImage.src = e.target.src;
-    displayedImage.alt = e.target.alt;
-  });
+    newImage.addEventlistener('click', e => 
+    {
+        displayedImage.src = e.target.src;
+        displayedImage.alt = e.target.alt;
+    });
 }
 
 /* Wiring up the Darken/Lighten button */ /* Add a click event listener to the button */
