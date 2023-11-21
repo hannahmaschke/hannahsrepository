@@ -1,5 +1,10 @@
 // set up canvas
 
+const p = document.querySelector('p');
+let ballCount = 0;
+ballCount++;
+para.textContent = "Current balls on the screen:" + ballCount;
+
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 
