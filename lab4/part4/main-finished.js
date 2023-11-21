@@ -29,10 +29,19 @@ const Shape = {
    }
 }
 
+class EvilCircle extends Shape  {
+
+   constructor(x, y){
+      super(x, y, 20, 20);
+      this.color = white;
+      this.size = 10;
+
+   }
+}
 
 class Ball extends Shape {
 
-   constructor(x, y, velX, velY, color, size, exists) {
+   constructor(x, y, velX, velY, color, size) {
       super(x, y, velX, velY);
     
       this.color = color;
