@@ -122,8 +122,8 @@ class EvilCircle extends Shape  {
    }
    draw() {
       ctx.beginPath();
-      ctx.lineWidth = 3;
       ctx.strokeStyle = this.color;
+      ctx.lineWidth = 3;
       ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
       ctx.stroke();
    }
@@ -191,7 +191,7 @@ function loop() {
    ctx.fillRect(0, 0,  width, height);
 
     
-      for (const ball of balls){
+   for (const ball of balls){
       if (ball.exists = true){
       ball.draw();
       ball.update();
