@@ -66,7 +66,7 @@ class EvilCircle extends Shape  {
       ctx.stroke();
    }
    
-   update() {
+   checkBounds() {
       if ((this.x + this.size) >= width) {
          this.x -= this.size;
       }
