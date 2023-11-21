@@ -32,11 +32,12 @@ const Shape = {
 
 class Ball extends Shape {
 
-   constructor(x, y, velX, velY, color, size) {
+   constructor(x, y, velX, velY, color, size, exists) {
       super(x, y, velX, velY);
     
       this.color = color;
       this.size = size;
+      this.exists = true;
    }
 
    draw() {
