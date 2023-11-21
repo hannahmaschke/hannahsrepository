@@ -22,7 +22,7 @@ for (const image of images) {
     newImage.setAttribute('alt', alts[image]);
     thumbBar.appendChild(newImage);
 /* Add a click event listener to each <img> inside the thumb bar (this is supposed to be part of the loop) */
-    newImage.addEventlistener('click', e => 
+    newImage.addEventListener('click', e => 
     {
         displayedImage.src = e.target.src;
         displayedImage.alt = e.target.alt;
@@ -39,7 +39,7 @@ btn.addEventListener('click', ()  =>
         btn.textContent = 'Lighten';
         overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
 
-    }else (btnClass === 'light')
+    }else if(btnClass === 'light')
     { 
         btn.setAttribute('class', 'darken');
         btn.textContent = 'Darken';
