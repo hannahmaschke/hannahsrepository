@@ -2,6 +2,7 @@
 
 const para = document.querySelector('p');
 let count = 0;
+count++
 
 
 const canvas = document.querySelector('canvas');
@@ -158,6 +159,9 @@ class EvilCircle extends Shape  {
             ball.exists = false;
             count--;
             para.textContent = 'Ball count: ' + count;
+
+         
+            
           }
         }
       }
