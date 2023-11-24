@@ -2,7 +2,7 @@
 
 const para = document.querySelector('p');
 let count = 0;
-count++
+//count++;
 
 
 const canvas = document.querySelector('canvas');
@@ -155,7 +155,7 @@ class EvilCircle extends Shape  {
           const dy = this.y - ball.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
     
-          if (distance < this.size + ball.size) {
+          if (distance < (this.size + ball.size)) {
             ball.exists = false;
             count--;
             para.textContent = 'Ball count: ' + count;
@@ -183,7 +183,7 @@ while (balls.length < 25) {
       size
    );
 
-  balls.push(ball);
+   balls.push(ball);
    count++;
    para.textContent = 'Ball count: ' + count;
 }
@@ -196,7 +196,7 @@ function loop() {
 
     
    for (const ball of balls){
-      if (ball.exists = true){
+      if (ball.exists == true){
       ball.draw();
       ball.update();
       ball.collisionDetect();
